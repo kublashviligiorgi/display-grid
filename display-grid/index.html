@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .maindiv {
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      display: grid;
+      grid-template-rows: 414px 1fr;
+      grid-template-columns: 320px 1fr;
+      gap: 9px;
+    }
+
+    .second-maindiv {
+      background-color: #F0F1EC;
+    }
+
+    .reddiv {
+      background-color:  #E72F24;
+    }
+
+    .div-320px {
+      display: grid;
+      grid-template-rows: 295px 1fr;
+      grid-template-columns: 1fr;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .div-320px>div {
+      background-color: #F0F1EC;
+    }
+
+    .lastdiv {
+      display: grid;
+      grid-template-rows: 295px 1fr;
+      grid-template-columns: 378px 1fr;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .lastdiv>div {
+      background-color: #F0F1EC;
+    }
+
+    #mergediv {
+      display: grid;
+      grid-template-rows: 130px 155px;
+      grid-template-columns: 100%;
+      gap: 10px;
+      background-color: #000;
+    }
+
+    #bluediv {
+      background-color: #004592;
+    }
+
+    #whitediv {
+      background-color: #F0F1EC;
+      grid-row-start:2 ;
+      grid-row-end: 4;
+    }
+
+    #mergediv2 {
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 198px 1fr;
+      gap: 10px;
+      background-color: #000;
+    }
+
+    #yellowdiv {
+      background-color: #F9D01E;
+    }
+
+    #blackdiv {
+      background-color: #232629;
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="maindiv">
+    <div class="second-maindiv reddiv"></div>
+    <div class="second-maindiv"></div>
+    <div class="second-maindiv div-320px">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="second-maindiv lastdiv">
+      <div></div>
+      <div id="mergediv">
+        <div id="bluediv"></div>
+        <div id="whitediv"></div>
+      </div>
+      <div id="mergediv2">
+        <div id="yellowdiv"></div>
+        <div id="blackdiv"></div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
